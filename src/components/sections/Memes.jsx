@@ -1,40 +1,3 @@
-// import React, { useEffect, useState } from "react";
-// import axios from "axios";
-// import "./Memes.css";
-
-// function Memes() {
-//   const [memes, setMemes] = useState([]);
-//   const getMemes = async () => {
-//     const response = await axios.get("http://localhost:4000/memes", {
-//       withCredentials: true, // This instructs Axios to include cookies in the request
-//     });
-//     console.log(response.data.memes);
-//     setMemes(response.data.memes);
-//   };
-
-//   useEffect(() => {
-//     getMemes();
-//   }, []);
-//   return (
-//     <div className="outerMemesContainer">
-//       <div className="containerTitle">Top 20 Memes From r/Memes</div>
-//       <div className="memesContainer">
-//         {memes.map((meme) => {
-//           return (
-//             <div className="memeDiv">
-//               <div className="memeTitle">{meme.title}</div>
-//               <div className="memeImageDiv">
-//                 <img src={meme.url} alt="" className="memeImage" />
-//               </div>
-//             </div>
-//           );
-//         })}
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default Memes;
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./Memes.css";
@@ -43,23 +6,6 @@ function Memes() {
   const [memes, setMemes] = useState([]);
 
   const getMemes = async () => {
-    // const urls = [
-    //   "http://localhost:4000/memes",
-    //   "http://192.168.1.122:4000/memes",
-    // ];
-
-    // for (const url of urls) {
-    //   try {
-    //     const response = await axios.get(url, {
-    //       withCredentials: true, // This instructs Axios to include cookies in the request
-    //     });
-    //     console.log(`Successfully fetched memes from: ${url}`);
-    //     setMemes(response.data.memes); // Set the memes data from the successful request
-    //     return; // Exit the loop once a successful request is made
-    //   } catch (error) {
-    //     console.warn(`Failed to fetch memes from: ${url}`);
-    //   }
-    // }
     const urls = [
       "https://hackerflavio.com/memes",
       "http://localhost:4000/memes",

@@ -1,29 +1,3 @@
-// import React, { useEffect } from "react";
-// const axios = require("axios");
-// function YoutubeVidoes() {
-//   let config = {
-//     method: "get",
-//     maxBodyLength: Infinity,
-//     url: "http://localhost:3050/videoFiles/79159287.mp4",
-//     headers: {},
-//   };
-
-//   useEffect(() => {
-//     axios
-//       .request(config)
-//       .then((response) => {
-//         console.log(JSON.stringify(response.data));
-//       })
-//       .catch((error) => {
-//         console.log(error);
-//       });
-//   }, []);
-
-//   return <div>YoutubeVidoes</div>;
-// }
-
-// export default YoutubeVidoes;
-
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./YoutubeVideos.css";
