@@ -1,0 +1,84 @@
+.containerTitle {
+  font-size: 26px;
+  margin-left: 15px;
+  border-bottom: solid;
+  /* width: 400px; */
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+.outerCourseContainer {
+  border: solid;
+  border-radius: 15px;
+  background-color: #0000008f;
+  backdrop-filter: blur(10px);
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 495px;
+  padding-left: 2.5px;
+}
+.courseContainer {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 500px;
+  width: fit-content;
+}
+.courseDiv {
+  width: 450px;
+  height: auto;
+  padding: 5px;
+  margin-right: 5px;
+  margin-left: 15px;
+  background-color: #00000085;
+}
+.courseInnerDiv {
+  padding: 5px;
+}
+.courseTitle {
+  font-size: 24px;
+  display: flex;
+}
+.courseName {
+  flex-grow: 1;
+  align-items: center;
+  display: flex;
+}
+.arrowContainer {
+  width: fit-content;
+  background-color: #c7c7c7;
+  height: fit-content;
+  padding: 5px;
+  border-radius: 10px;
+}
+.arrowImg {
+  width: 25px;
+  display: block;
+}
+.arrowUp {
+  transform: rotate(180deg);
+}
+.collaps {
+  height: 0px;
+}
+
+/* Define the scrollbar width and track color */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent; /* Track color */
+}
+
+/* Define the scrollbar thumb (the part you drag) */
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Thumb color */
+  border-radius: 6px; /* Rounded corners */
+  border: 3px solid #555; /* Border around the thumb */
+}
+
+/* Hover state for the thumb */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}

@@ -1,0 +1,116 @@
+:root {
+  --theme-color-trasnparent: transparent;
+  --border-thickness: 4px; /* Define a variable for border thickness */
+  --theme-color: #cb4174; /* Define a root color variable */
+}
+
+.gearContainer {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #3aa0c56e;
+  padding: 1.5px;
+  border: solid #00000070;
+  border-radius: 15px;
+}
+.gear {
+  width: 45px;
+  display: block;
+}
+.gearContainer:hover {
+  background-color: #3aa0c5;
+  cursor: pointer;
+}
+
+.outerDiv {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.outerSettingsDiv {
+  position: absolute;
+  bottom: 20px;
+  right: 95px;
+  border: solid;
+  height: 225px;
+  width: 175px;
+  border-radius: 15px;
+  background-color: #5f5f5f;
+}
+.innerSettingsDiv {
+  padding: 5px;
+  padding-left: 0px;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 99;
+  position: absolute;
+  border-radius: 13px;
+  background: linear-gradient(130deg, rgb(7 5 7) 0%, rgb(0 105 94) 100%);
+}
+.settingsDiv {
+  /* padding: 10px; */
+  overflow-y: scroll;
+  height: 100%;
+}
+.settingsInnerDiv {
+  height: -webkit-fill-available;
+  padding: 10px;
+}
+.settingSquare {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background-color: #006359;
+  border: solid;
+  transform: rotate(45deg);
+  bottom: 5px;
+  right: -10px;
+  border-radius: 5px;
+  z-index: 1;
+}
+.settingsOptionDiv {
+  padding-bottom: 5px;
+  border-bottom: solid #0083ff;
+}
+.settingsText {
+  font-size: 18px;
+}
+.settingsInput {
+  width: -webkit-fill-available;
+}
+.settingsImageRow {
+  margin-bottom: 5px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 5px;
+}
+.settingsImageContainer {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid var(--theme-color-trasnparent) var(--border-thickness); /* Use the root color variable */
+}
+
+.selectedTheme {
+  border: solid var(--theme-color) var(--border-thickness); /* Use the root color variable */
+}
+.settingsImageContainer:hover {
+  cursor: pointer;
+  border: solid var(--theme-color) var(--border-thickness); /* Use the root color variable */
+}
+.settingsImage {
+  /*background-image: url(https://cdn.midjourney.com/d3823b02-0d27-4982-82a8-e33f0cebc6bc/0_2.png);*/
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s;
+  width: 60px;
+  height: 60px;
+}

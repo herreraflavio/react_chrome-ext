@@ -1,0 +1,66 @@
+.containerTitle {
+  font-size: 26px;
+  margin-left: 15px;
+  border-bottom: solid;
+  width: 400px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+.outerMemesContainer {
+  border: solid;
+  border-radius: 15px;
+  background-color: #0000008f;
+  backdrop-filter: blur(4px);
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 445px;
+  padding-left: 2.5px;
+}
+.memesContainer {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  height: 500px;
+  overflow-x: hidden;
+  width: fit-content;
+}
+.memeDiv {
+  width: 400px;
+  height: auto;
+  padding: 5px;
+  margin-right: 5px;
+  margin-left: 15px;
+  background-color: #00000085;
+}
+.memeTitle {
+  font-size: 24px;
+}
+.memeImageDiv {
+  /* width: 400px; */
+}
+.memeImage {
+  /* width: 100%; */
+  height: auto;
+  width: 400px;
+}
+
+/* Define the scrollbar width and track color */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent; /* Track color */
+}
+
+/* Define the scrollbar thumb (the part you drag) */
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Thumb color */
+  border-radius: 6px; /* Rounded corners */
+  border: 3px solid #555; /* Border around the thumb */
+}
+
+/* Hover state for the thumb */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}

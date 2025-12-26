@@ -1,0 +1,35 @@
+{
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "name": "React Chrome Extension",
+  "description": "This is a Chrome extension built with React and TypeScript",
+  "action": {
+    "default_popup": "js/index.html",
+    "default_title": "React Chrome Extension"
+  },
+  "permissions": [
+    "tabs",
+    "bookmarks",
+    "activeTab",
+    "scripting",
+    "cookies",
+    "nativeMessaging"
+  ],
+  "host_permissions": [
+    "http://192.168.1.122:4000/*",
+    "http://10.56.184.6:4000/*",
+    "http://localhost:4000/*",
+    "http://localhost:8080/*",
+    "http://localhost:3050/*",
+    "https://hackerflavio.com/*"
+  ],
+  "chrome_url_overrides": {
+    "newtab": "js/index.html"
+  },
+  "icons": {
+    "128": "./icons/128.png",
+    "48": "./icons/48.png",
+    "32": "./icons/32.png",
+    "16": "./icons/16.png"
+  }
+}

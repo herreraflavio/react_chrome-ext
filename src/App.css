@@ -1,0 +1,62 @@
+.App {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+/* Add this CSS class */
+.transition-container {
+  transition: background-image 0.5s ease-in-out; /* Adjust the duration as needed */
+}
+.container {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.customButton {
+  width: 165px !important;
+  color: #90fff8;
+}
+.selectTab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  margin-bottom: 20px;
+  border: solid;
+  padding: 5px;
+  border-radius: 15px;
+  background-color: #0000008f;
+  backdrop-filter: blur(10px);
+  width: fit-content;
+}
+.selected {
+  font-size: 18px;
+  background-color: #9b2d2d;
+  cursor: pointer;
+  margin-right: 5px;
+  width: 135px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: solid;
+}
+
+.notSelected {
+  font-size: 18px;
+  cursor: pointer;
+  margin-right: 5px;
+  width: 135px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: solid transparent;
+}
+.notSelected:hover {
+  background-color: #9b2d2d81;
+}
